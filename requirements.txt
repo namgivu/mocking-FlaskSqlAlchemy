@@ -2,3 +2,4 @@ Flask
 Flask-SqlAlchemy
 PyMysql
 nose
+mock
