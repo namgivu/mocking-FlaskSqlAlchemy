@@ -95,3 +95,5 @@ ENV/
 
 .idea/*.iml
 #endregion mock-FlaskSqlALchemy's ignore
+.idea/dataSources/*
+.idea/dataSources.local.xml
