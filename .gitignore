@@ -87,3 +87,11 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+#region mock-FlaskSqlALchemy's ignore
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+
+.idea/*.iml
+#endregion mock-FlaskSqlALchemy's ignore
