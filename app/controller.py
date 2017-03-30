@@ -8,7 +8,11 @@ def app_index():
 
 @app.route('/app_try_model')
 def app_try_model():
+  #query all model objects
   from app.model.some_model import SomeModel
   someModelALL = SomeModel.query.all()
-  d = [someModel.name for someModel in someModelALL]
-  return str(d)
+
+  #output as json
+  d = [dict(name=someModel.name) for someModel in someModelALL]
+  from flask import jsonify
+  return jsonify(d)  #return JSON in Flask ref. http://stackoverflow.com/a/13089975/248616
